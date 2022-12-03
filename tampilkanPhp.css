@@ -1,0 +1,205 @@
+.tampilan{
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.tampilan form .isi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .isi .input-box{
+    margin-bottom: 15px;
+    width: calc (100% / 2 - 20px);
+}
+
+.isi .input-box .detail{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.isi .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form .isi .input-gambar{
+    margin: 20px 0 12px 0;
+    width: calc (100% / 2 - 20px);
+}
+
+.isi .input-gambar .detail{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.isi .input-gambar input{
+    height: 45px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.isi .input-box input:focus,
+.isi .input-box input:valid{
+    border-color: #f44336;
+}
+
+form .input-check .jenis-judul{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+form .input-check .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 25px;
+    justify-content: space-between;
+}
+
+.input-check .category label{
+    display: inline-flex;
+    align-items: center;
+}
+
+.input-check .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid transparent;
+}
+
+#radio1:checked ~ .category label .one,
+#radio2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: #f44336;
+}
+
+/* form input[type="radio"]{
+    display: none;
+} */
+
+form .button-submit{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button-submit input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #f44336;
+}
+
+form .button input:hover{
+    background: #000;
+}
+
+form button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #f44336;
+}
+
+.phpnya{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    max-width: 800px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 72, 72, 0.842);
+    border: rgba(114, 92, 87, 0.637) 10px solid;
+    border-radius: 10px;
+}
+
+.echoes {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px 0 5px;
+    word-spacing: 2px;
+}
+
+/*tampilkan*/
+
+.table-section{
+    margin-top: 20px;
+    height: 650px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th, td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+}
+
+button a{
+    text-decoration: none;
+}
+
+td button:nth-child(1){
+    background-color: red;
+}
+td button:nth-child(2){
+    background-color: #0298cf;
+}

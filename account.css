@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url(image/loginbg.jpg);
+    justify-content: center;
+    align-items: center;
+}
+ 
+.container {
+    opacity: 90%;
+    min-height: 400px;
+    width: 450px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+ 
+.container .login-text {
+    color: #111;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+ 
+.container .login-akun .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+ 
+.container .login-akun .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 30px;
+    background:floralwhite;
+    outline: none;
+    transition: .5s;
+}
+ 
+.container .login-akun .input-group input:focus, .container .login-akun .input-group input:valid {
+    border-color: #fca596;
+}
+ 
+.container .login-akun .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 17px 20px;
+    text-align: center;
+    border: none;
+    background: #fe9b9b;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .5s;
+}
+ 
+.container .login-akun .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.acc{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    text-align: center;
+}
+
+.acc2{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #2691d9;
+    font-weight: 600;
+}
+
+ 
+@media (max-width: 468px) {
+    .container {
+        width: 300px;
+    }
+}

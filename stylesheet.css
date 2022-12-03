@@ -1,0 +1,251 @@
+/*editor only*/
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --warna-body: #000;
+    --warna-text: #fff;
+    --warna-footer: rgb(20, 12, 90);
+}
+.mode-gelap {
+    --warna-body: #fff;
+    --warna-text: #000;
+    --warna-footer: darkgrey;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--warna-body);
+}
+
+li{
+    list-style: none;
+}
+
+.head{
+    color: white;
+    height: 90px;
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(209,57,57,1) 15%, rgba(255,149,0,0) 35%), url(image/mitra-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} 
+ 
+.header-logo img{
+    float: left;
+    font-size: 36px;
+    padding: 10px 10px;
+    width: 70px;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav li{
+    float: left;
+    padding: 30px 20px;
+    text-align: right;
+}
+
+.text-box{
+    width: 90%;
+    color:cornsilk;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.contents{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contents h3{
+    border-bottom: 2px solid #cecece;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.row{ 
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produk-text{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    color: var(--warna-text);
+}
+
+.produk{
+    flex-basis: 20%;
+    background: #fff3f3;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 12px 13px;
+    box-sizing: border-box;
+}
+
+.produk img{
+    width: 200px;
+    height: 150px;
+    border: 2px solid rosybrown;
+    border-radius: 5px;
+}
+
+.foot{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--warna-footer);
+    color: var(--warna-text);
+}
+
+.foot h4{
+    margin-bottom: 10x;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icon .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.diri-saya{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: var(--warna-text);
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 50%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    color: var(--warna-text);
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: orangered;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.check-box{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    display: none;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ .check:before{
+    transform: translateX(20px);
+}
+
+input[type="checkbox"]:checked ~ .check:before{
+    background-color: #fff;
+    box-shadow: 0 0 0 50000px #000;
+}
+
+.check:before,
+.check:after {
+    border-radius: 50%;
+    content: '';
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    transition: transform 0.5s ease;
+    width: 16px;
+}
+
+.check:before {
+    background-color: #000;
+    left: 2px;
+}
+
+.check {
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s ease-in, 
+    box-shadow 0.5s ease-in;
+
+    width: 40px;
+}
+
